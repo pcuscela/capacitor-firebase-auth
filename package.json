@@ -1,10 +1,11 @@
 {
-	"name": "capacitor-firebase-auth",
-	"version": "3.1.2-rc.3",
+	"name": "pcuscela-capacitor-firebase-auth",
+	"version": "3.0.2",
 	"description": "Capacitor plugin for Firebase Authentication",
 	"main": "dist/esm/index.js",
 	"types": "dist/esm/index.d.ts",
 	"scripts": {
+    "rimraf": "./node_modules/rimraf/bin.js",
 		"build": "npm run clean && tsc --project tsconfig.json",
 		"pack": "npm pack && mv capacitor-firebase-auth-3.*.tgz capacitor-firebase-auth-nightly.tgz",
 		"clean": "rimraf ./dist",
@@ -32,7 +33,7 @@
 		"dist/",
 		"ios/",
 		"android/",
-		"CapacitorFirebaseAuth.podspec"
+		"PcuscelaCapacitorFirebaseAuth.podspec"
 	],
 	"keywords": [
 		"capacitor",
@@ -49,9 +50,9 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/baumblatt/capacitor-firebase-auth.git"
+		"url": "https://github.com/pcuscela/capacitor-firebase-auth"
 	},
 	"bugs": {
-		"url": "https://github.com/baumblatt/capacitor-firebase-auth.git/issues"
+		"url": "https://github.com/pcuscela/capacitor-firebase-auth/issues"
 	}
 }
