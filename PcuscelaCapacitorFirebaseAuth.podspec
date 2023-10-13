@@ -1,7 +1,7 @@
 
   Pod::Spec.new do |s|
     s.name = 'PcuscelaCapacitorFirebaseAuth'
-    s.version = '3.0.2'
+    s.version = '3.2.0'
     s.summary = 'Capacitor plugin for Firebase Authentication'
     s.license = 'MIT'
     s.homepage = 'https://github.com/pcuscela/capacitor-firebase-auth.git'
