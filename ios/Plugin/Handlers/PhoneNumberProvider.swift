@@ -31,7 +31,7 @@ class PhoneNumberProviderHandler: NSObject, ProviderHandler {
 
         PhoneAuthProvider.provider().verifyPhoneNumber(phone, uiDelegate: nil) { (verificationID, error) in
             if let error = error {
-                if let errCode = AuthErrorCode(rawValue: error._code) {
+                 let errCode = AuthErrorCode(AuthErrorCode.Code(rawValue: error._code) ?? AuthErrorCode.internalError)
                     switch errCode {
                     case AuthErrorCode.quotaExceeded:
                         call.reject("Quota exceeded.")
@@ -46,7 +46,6 @@ class PhoneNumberProviderHandler: NSObject, ProviderHandler {
                     }
 
                     return
-                }
             }
 
             self.mVerificationId = verificationID
