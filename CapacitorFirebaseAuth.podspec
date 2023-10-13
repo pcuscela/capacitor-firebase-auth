@@ -9,11 +9,11 @@
     s.source = { :git => 'https://github.com/baumblatt/capacitor-firebase-auth.git', :tag => s.version.to_s }
     s.source_files = 'ios/Plugin/**/*.{swift,h,m,c,cc,mm,cpp}'
     s.ios.deployment_target  = '12.0'
-    s.dependency 'Capacitor'
-    s.dependency 'GoogleSignIn'
-    s.dependency 'FBSDKCoreKit'
-    s.dependency 'FBSDKLoginKit'
-    s.dependency 'Firebase/Core'
-    s.dependency 'Firebase/Auth'
+    s.dependency 'Capacitor', '~> 3.3.3'
+    s.dependency 'GoogleSignIn', '~> 6.0.0'
+    s.dependency 'FBSDKCoreKit', '~> 16.2.0'
+    s.dependency 'FBSDKLoginKit', '~> 16.2.0'
+    s.dependency 'Firebase/Core', '~> 9.6.0'
+    s.dependency 'Firebase/Auth', '~> 9.6.0'
     s.static_framework = true
   end
